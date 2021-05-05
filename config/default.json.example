@@ -1,0 +1,15 @@
+{
+    "app": {
+        "environment": "development"
+    },
+    "mysql": {
+        "host": "0.0.0.0",
+        "port": 3306,
+        "username": "user",
+        "password": "1234-xD",
+        "database": "noice"
+    },
+    "sentry":{
+        "dsn": "url"
+    }
+}
