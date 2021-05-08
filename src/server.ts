@@ -43,7 +43,7 @@ const stopServer = async () => {
 
 (async function () {
     handleSignalsAndSupressUncaughtExceptions();
-    application.start();
+    await application.start();
     process.stdin.resume(); // Zastavení zastavování :o
 })();
 

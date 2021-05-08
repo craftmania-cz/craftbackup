@@ -1,0 +1,14 @@
+{
+  "backups": [
+    {
+      "key": "main-minigames",
+      "database": "minigames",
+      "cron": "*/10 * * * * *"
+    },
+    {
+      "key": "survival-stats",
+      "database": "minigames-2",
+      "cron": "*/15 * * * * *"
+    }
+  ]
+}
