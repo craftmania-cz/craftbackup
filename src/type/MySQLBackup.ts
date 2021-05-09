@@ -25,7 +25,8 @@ export default class MySQLBackup {
                 password: config.get("mysql.password"),
                 database: this.database
             },
-            dumpToFile: './backups/' + this.key + '.sql'
+            dumpToFile: './backups/' + this.key + '.sql.tar',
+            compressFile: true
         });
         this.log.verbose("Database backup completed for [" + this.key + "].");
     }
