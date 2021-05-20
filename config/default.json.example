@@ -9,6 +9,12 @@
         "password": "1234-xD",
         "database": "noice"
     },
+       "ftp": {
+         "host": "",
+         "port": 22,
+         "username": "",
+         "password": ""
+    },
     "sentry":{
         "dsn": "url"
     }
