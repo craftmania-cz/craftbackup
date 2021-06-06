@@ -1,6 +1,7 @@
 {
     "app": {
-        "environment": "development"
+        "environment": "development",
+        "discord-webhook": "xxxx"
     },
     "mysql": {
         "host": "0.0.0.0",

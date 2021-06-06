@@ -36,3 +36,5 @@ config/default\.json
 .DS_Store
 \.idea/
 config/backup-mysql\.json
+
+backups/
