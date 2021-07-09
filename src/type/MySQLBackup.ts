@@ -60,6 +60,7 @@ export default class MySQLBackup {
             return;
         }
         this.log.verbose("Backup has been successfully uploaded.");
+        await client.close();
         await fse.remove('./backups/' + fileName);
 
         const finalProcessedTime = dayjs().diff(startTime, 'ms');

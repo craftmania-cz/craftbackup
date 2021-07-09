@@ -23,8 +23,8 @@ export default class BackupManager {
     public async loadBackups() {
         log.info("Start loading backups into cache.");
         await this.loadMySQLBackups();
-        await this.loadCronTasks();
-        log.info("All backups successfully loaded and started.");
+        await this.startCronTasks();
+        log.info("All backups successfully loaded.");
     }
 
     private async loadMySQLBackups() {
@@ -46,7 +46,7 @@ export default class BackupManager {
         }
     }
 
-    private async loadCronTasks() {
+    private async startCronTasks() {
         this.mysqlCronArray.forEach((mysqlDetail: MySQLDetail) => {
             if (cron.validate(mysqlDetail.cron)) {
                 cron.schedule(mysqlDetail.cron, () => {

@@ -38,3 +38,5 @@ config/default\.json
 config/backup-mysql\.json
 
 backups/
+
+config/ftp-clean-tasks.json

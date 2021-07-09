@@ -1,0 +1,10 @@
+{
+  "tasks": [
+    {
+      "key": "something",
+      "remoteDir": "/folder",
+      "oldInHours": 5,
+      "cron": "0 */5 * * * *"
+    }
+  ]
+}
