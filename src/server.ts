@@ -13,7 +13,7 @@ if (!fs.existsSync('/config/default.json') && fs.existsSync('/config/default.jso
     process.exit(1);
 }
 
-debug('ts-express:server');
+debug('ts:server');
 
 const stage = process.env.ENVIRONMENT || config.get('app.environment') || 'development';
 
@@ -41,7 +41,7 @@ const stopServer = async () => {
     process.exit(0);
 };
 
-(async function () {
+(async function () { //TODO: Kontrola configu
     handleSignalsAndSupressUncaughtExceptions();
     await application.start();
     process.stdin.resume(); // Zastavení zastavování :o

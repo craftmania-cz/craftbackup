@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run clean && tsc",
-    "build-ci": "tsc -p tsconfig.production.json",
+    "build-ci": "tsc -p tsconfig.json",
     "clean": "rm -rf dist/* && touch dist/.gitkeep",
     "start": "node dist/server.js",
     "watch": "nodemon dist/server.js",
@@ -21,6 +21,9 @@
   ],
   "author": "MrWakeCZ",
   "license": "Apache 2.0",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "devDependencies": {
     "@types/axios": "^0.14.0",
     "@types/config": "0.0.38",
